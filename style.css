@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Ruslan+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: "Otomanopee One", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 5px 2px 3px #333;
+}
+
+#tela {
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor: crosshair;
+}
+.container {
+  display: flex;
+  margin-top: 4rem;
+}
+.pic-container {
+  margin: 3rem 2rem;
+}
+.colorArea {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.color {
+  flex: 1;
+  height: 40px;
+  cursor: pointer;
+}
+.color.active {
+  border: 5px solid #fff;
+}
+
+.clear {
+  border: 3px solid #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: inherit;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+  }
+}
